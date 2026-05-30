@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Membership Form</title>
+</head>
+
+<body>
+
+    <center>
+
+        <form action="/submit" method="POST">
+
+            <fieldset>
+
+                <h2>WELCOME TO REFORMATION EMBASSY</h2>
+                <h3><i>The Good News Church</i></h3>
+
+                <textarea cols="50" rows="4" readonly>
+If you have interest in joining the church, please fill out this form and submit it. Once this is received, one of the pastors will contact you.
+                </textarea>
+
+            </fieldset>
+
+            <br>
+
+            <table border="3" cellpadding="10">
+
+                <tr>
+                    <td>
+                        <h3>Name</h3>
+                        <input type="text"
+                               name="name"
+                               placeholder="Surname Middle First"
+                               required>
+                    </td>
+
+                    <td>
+                        <h3>Address</h3>
+                        <input type="text"
+                               name="address"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>Date of Birth</h3>
+                        <input type="date"
+                               name="dob"
+                               required>
+                    </td>
+
+                    <td>
+                        <h3>Relationship Status</h3>
+
+                        <input type="radio"
+                               name="relationship"
+                               value="Single">
+                        Single
+
+                        <input type="radio"
+                               name="relationship"
+                               value="Married">
+                        Married
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>Cell Phone</h3>
+                        <input type="tel"
+                               name="phone"
+                               placeholder="+234"
+                               required>
+                    </td>
+
+                    <td>
+                        <h3>Email</h3>
+                        <input type="email"
+                               name="email"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>Occupation</h3>
+                        <input type="text"
+                               name="occupation">
+                    </td>
+
+                    <td>
+                        <h3>Date Registered</h3>
+                        <input type="date"
+                               name="registered_date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <h3>Denomination</h3>
+                        <input type="text"
+                               name="denomination"
+                               placeholder="Enter denomination"
+                               required>
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <button type="submit">
+                Submit Form
+            </button>
+
+        </form>
+        
+        <a href="/users">View All Users</a>
+
+    </center>
+
+</body>
+
+</html>
